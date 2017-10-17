@@ -1,0 +1,26 @@
+{
+  "name": "innovify_test",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Dipam Shrivastav"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dipamshrivastav/innovify_test",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-animate": "^1.6.6",
+    "angular-route": "^1.6.6",
+    "jquery": "^3.2.1",
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}
