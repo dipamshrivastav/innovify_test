@@ -12,19 +12,43 @@
 <body>
 
 <div class="container">
-    <h1>Hello world</h1>
+    <ul id="language_menu" class="nav navbar-nav navbar-right" ng-controller="LanguageController">
+        <li class="dropdown">
+            <button class="dropdown-toggle btn btn-primary" data-toggle="dropdown"> Language : {{selectedLanguage}}</button>
+            <ul id="language_menu_bar" class="dropdown-menu">
+                <li>
+                    <a href="#/" ng-click="changeLanguage('en-US', 'English')">English</a>
+                </li>
+                <li><a href="#/" ng-click="changeLanguage('fr-FR', 'French')">French</a></li>
+                <li><a href="#/" ng-click="changeLanguage('hi-IN', 'Hindi')">Hindi</a></li>
+            </ul>
+        </li>
+    </ul>
     <!-- views -->
-    <div ng-view></div>
+    <div id="content" class="container-fluid" ng-view>
+    </div>
 </div>
 
-<!-- scripts -->
+<!-- Dependency scripts -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="bower_components/angular-translate/angular-translate.min.js"></script>
+<script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+<script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js"></script>
+<script src="bower_components/angular-translate-storage-local/angular-translate-storage-local.min.js"></script>
+
+<!--Custom scripts-->
 <script src="app.js"></script>
 <script src="route.js"></script>
-<script src="controllers/MainController.js"></script>
+<script src="services/DataService.js"></script>
+<script src="controllers/user/UsersController.js"></script>
+<script src="controllers/user/CreateUsersController.js"></script>
+<script src="controllers/user/UpdateUsersController.js"></script>
+<script src="controllers/LanguageController.js"></script>
 </body>
 </html>

@@ -1,3 +1,255 @@
 /**
  * Created by Dipam on 10/18/2017.
  */
+
+body{
+    margin:0;
+    padding:0;
+    background-color:#FFFFFF;
+}
+
+.glyphicon {
+    font-size: 22px;
+}
+
+.no-padding{
+    padding:0 !important;
+}
+
+.no-margin{
+    margin:0 !important;
+}
+
+#header{
+    max-height: 70px;
+    max-width: 100%;
+    text-align: left;
+    vertical-align: top;
+    background-color: #F4F4F4;
+    border: 1px solid #999999;
+}
+
+#header .child-nav{
+    max-height: 40px;
+    max-width: 100%;
+    min-width: 100%;
+    display: table;
+}
+
+#header #logoBand{
+    float:left;
+    margin-right: 10px;
+    max-height: 40px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#header #logoBand #logo{
+    max-height: 35px;
+    max-width: 310px;
+    min-height: 35px;
+    min-width: 310px;
+    margin-left: 65px;
+    background-image:url(../images/svgs/logo.svg);
+    background-repeat:no-repeat;
+}
+
+#rightMenuPanel{
+    float:right;
+    margin: 5px 0 5px 0;
+}
+
+#rightMenuPanel .rightMenu{
+    float:right;
+    width:40px;
+    list-style:none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#rightMenuPanel a {
+    color:#999999;
+}
+
+#rightMenuPanel a:hover {
+    color:#333333;
+    text-decoration:none;
+}
+
+#rightMenuPanel .dropdown-menu{
+    left:-160px !important;
+    min-width:200px;
+    padding:10px;
+    top:35px;
+    border-width:0;
+    background-color:#4F4E4E;
+    color:#FFFFFF;
+}
+
+#rightMenuPanel .dropdown-menu:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 170px;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #4F4E4E;
+}
+
+#rightMenuPanel .dropdown-menu ul{
+    list-style:none;
+    padding:0 !important;
+}
+
+#rightMenuPanel .dropdown-menu ul a{
+    float:left;
+    padding:5px 0 5px 0;
+    color:#FFFFFF;
+    width:100%;
+    cursor: pointer;
+}
+
+/*Dipam - All input control css start*/
+.primary-btn{
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #F9A51A;
+    border: 1px solid #F9A51A;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.primary-btn :hover{
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #FAC05E;
+    border: 1px solid #FAC05E;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.primary-btn[disabled]{
+    font-size: 14px;
+    color: #CCCCCC;
+    background-color: #EBEBEB;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.secondary-btn{
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #666666;
+    background-color: #F8F8F8;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.secondary-btn :hover, .secondary-btn :focus{
+    color: #333333;
+    text-decoration: none;
+}
+
+.secondary-btn[disabled]{
+    font-size: 14px;
+    color: #CCCCCC;
+    background-color: #EBEBEB;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.default-input-field{
+    background-color: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    height: 35px;
+}
+
+.default-input-field.invalid-input{
+    background-color: #FFFFFF !important;
+    border: 1px solid #BB4945 !important;
+    border-radius: 2px !important;
+}
+
+
+.default-input-field[disabled]{
+    background-color: #EBEBEB;
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+}
+
+.default-input-field :focus, .form-control:focus{
+    border: 1px solid #F5A623 !important;
+    box-shadow: none;
+}
+
+.default-input-field md-autocomplete-wrap, .default-input-field input:not(.md-input){
+    height: 35px;
+}
+
+.default-input-field .md-whiteframe-1dp, .md-whiteframe-z1{
+    box-shadow: none;
+}
+
+.default-select-field{
+    background-color: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    height: 35px;
+}
+
+.default-select-field .invalid-input{
+    background-color: #FFFFFF;
+    border: 1px solid #BB4945;
+    border-radius: 2px;
+}
+
+.default-select-field :focus{
+    background-color: #FFFFFF;
+    border: 1px solid #F5A623;
+    border-radius: 2px;
+}
+
+.default-select-field[disabled]{
+    background-color: #EBEBEB;
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+}
+
+.default-select-field.ui-select-container{
+    padding: 0;
+    border: none;
+}
+
+.default-select-field.ui-select-container .ui-select-toggle{
+    height: 35px !important;
+    padding: 6px 12px;
+}
+
+.default-select-field.ui-select-container .ui-select-search{
+    height: 35px !important;
+}
+
+.default-select-field .btn-default-focus{
+    border: none !important;
+    box-shadow: none;
+    outline: none;
+}
+
+.default-select-field .btn-default-focus .ui-select-toggle{
+    border: 1px solid #F5A623 !important;
+    box-shadow: none;
+    outline: none;
+}
+
+/*Dipam - All input control css end*/

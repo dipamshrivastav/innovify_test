@@ -1,0 +1,30 @@
+<form name="userForm" novalidate>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" ng-model="user.name" required>
+        <span class="error-message" data-ng-show="!userForm.name.$valid && userForm.name.$touched">
+            Name is required
+        </span>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" ng-model="user.email">
+        <span class="error-message" data-ng-show="!userForm.email.$valid && userForm.email.$touched">
+            Email is invalid
+        </span>
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="text" ng-pattern="/^[0-9]*$/" class="form-control" id="phone" name="phone" ng-model="user.phone">
+        <span class="error-message" data-ng-show="userForm.phone.$error.pattern">
+            Phone is invalid
+        </span>
+    </div>
+    <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" class="form-control" id="city" name="city" ng-model="user.city">
+    </div>
+    <button type="button" class="btn btn-primary" ng-if="!isEdit" ng-click="createUser()" ng-disabled="userForm.$invalid">Save</button>
+    <button type="button" class="btn btn-primary" ng-if="isEdit" ng-click="updateUser()" ng-disabled="userForm.$invalid">Update</button>
+    <a href="#!/users" class="btn btn-default">Cancel</a>
+</form>

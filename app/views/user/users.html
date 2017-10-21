@@ -1,0 +1,39 @@
+<div class="row">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>City</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <thead>
+            <tr data-ng-repeat="user in users">
+                <td>
+                    <span ng-bind="user.name"></span>
+                </td>
+                <td>
+                    <span ng-bind="user.email"></span>
+                </td>
+                <td>
+                    <span ng-bind="user.phone"></span>
+                </td>
+                <td>
+                    <span ng-bind="user.city"></span>
+                </td>
+                <td>
+                    <a href="#!/users/update/{{user.id}}">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </a>
+                    <a href="#" data-ng-click="deleteUser()">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </a>
+                </td>
+            </tr>
+        </thead>
+    </table>
+
+    <a href="#!/users/create" class="btn btn-primary">Create User</a>
+</div>

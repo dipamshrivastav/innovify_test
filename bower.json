@@ -21,6 +21,13 @@
     "jquery": "^3.2.1",
     "animate.css": "^3.5.2",
     "bootstrap": "^3.3.7",
-    "font-awesome": "fontawesome#^4.7.0"
+    "font-awesome": "fontawesome#^4.7.0",
+    "angular-mocks": "^1.6.6",
+    "angular-resource": "^1.6.6",
+    "angular-translate": "^2.15.2",
+    "angular-translate-loader-static-files": "^2.15.2",
+    "angular-translate-storage-local": "^2.15.2",
+    "angular-translate-storage-cookie": "^2.15.2",
+    "angular-cookies": "^1.6.6"
   }
 }
