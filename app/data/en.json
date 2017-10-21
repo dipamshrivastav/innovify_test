@@ -1,2 +1,40 @@
 {
+  "userList": {
+    "heading": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "city": "CIty",
+      "action":"Action"
+    },
+    "button": {
+      "createUser":"Create new User"
+    },
+    "placeholder": {
+    },
+    "message": {
+    }
+  },
+  "userForm":{
+    "heading": {
+    },
+    "label":{
+      "name":"Name",
+      "email": "Email",
+      "phone": "Phone",
+      "city": "CIty"
+    },
+    "button": {
+      "save":"Save",
+      "update":"Update",
+      "cancel":"Cancel"
+    },
+    "placeholder":{
+    },
+    "message":{
+      "nameRequired":"Name is required",
+      "invalidEmail":"Email is invalid",
+      "invalidPhone":"Phone is invalid"
+    }
+  }
 }

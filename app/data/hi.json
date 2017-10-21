@@ -1,1 +1,40 @@
-{}
+{
+  "userList": {
+    "heading": {
+      "name": "HI-Name",
+      "email": "HI-Email",
+      "phone": "HI-Phone",
+      "city": "HI-CIty",
+      "action":"HI-Action"
+    },
+    "button": {
+      "createUser":"HI-Create new User"
+    },
+    "placeholder": {
+    },
+    "message": {
+    }
+  },
+  "userForm":{
+    "heading": {
+    },
+    "label":{
+      "name":"HI-Name",
+      "email": "HI-Email",
+      "phone": "HI-Phone",
+      "city": "HI-CIty"
+    },
+    "button": {
+      "save":"HI-Save",
+      "update":"HI-Update",
+      "cancel":"HI-Cancel"
+    },
+    "placeholder":{
+    },
+    "message":{
+      "nameRequired":"HI-Name is required",
+      "invalidEmail":"HI-Email is invalid",
+      "invalidPhone":"HI-Phone is invalid"
+    }
+  }
+}

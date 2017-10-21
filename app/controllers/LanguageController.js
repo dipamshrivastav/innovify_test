@@ -3,10 +3,10 @@
  */
 app.controller('LanguageController', ['$scope', '$translate',
     function($scope, $translate) {
-        $scope.selectedLanguage = "English";
-        $scope.changeLanguage = function (locale, language) {
-            $scope.selectedLanguage = language;
+        $scope.selectedLanguage = $translate.proposedLanguage();
+        $scope.changeLanguage = function (locale) {
             $translate.use(locale);
+            $scope.selectedLanguage = $translate.proposedLanguage();
         };
     }
 ]);
