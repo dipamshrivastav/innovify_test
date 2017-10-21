@@ -4,4 +4,5 @@ Download all packages
 
 after installing all the packages:-
 start gulp server:-
-$ gulp
+
+# gulp
